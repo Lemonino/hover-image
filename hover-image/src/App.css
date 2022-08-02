@@ -1,0 +1,66 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.show-modal-button {
+  margin:30px;
+  height: 200px;
+  width: 200px;
+}
+
+.title:hover+.image {
+  color: blue;
+  visibility: visible;
+  opacity: 1;
+}
+
+.image {
+  visibility: hidden;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.firstColumn {
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.secondColumn {
+  flex-direction: column;
+}
+
+.sidebar {
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  width: 260px;
+  flex-shrink: 0;
+  background-color: grey;
+  color: white;
+  height: 100%;
+  overflow: auto;
+}
+
+.hamburger {
+  color:black;
+  cursor: pointer;
+  margin: 30px;
+  size: 32pt;
+  width:max-content;
+}
+
+.icon {
+  margin-top:100px;
+  size:32pt;
+  cursor: pointer;
+  width:max-content;
+}
+
+.list-item {
+  margin:30px;
+}
