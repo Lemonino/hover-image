@@ -26,6 +26,6 @@ export const IconContainer = styled.div`
 export const SideBarContent = styled.div`{isActive}
     cursor: pointer;
     position: fixed; 
-    // visibility: ${(props) => props.isActive ? 'visible' : 'hidden'};
-    // transition-delay: 0.15s;
+    visibility: ${(props) => props.isActive ? 'visible' : 'hidden'};
+    transition-delay: 0.15s;
 `
