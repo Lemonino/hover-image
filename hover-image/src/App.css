@@ -1,7 +1,7 @@
 .App {
   display: flex;
-  flex-direction: row;
-  position: relative;
+  flex-direction: column;
+  flex-wrap:wrap;
 }
 
 .show-modal-button {
@@ -63,4 +63,35 @@
 
 .list-item {
   margin:30px;
+}
+
+.Title{
+  position:static;
+  left:200px;
+}
+
+.Main-button-container{
+  display:flex;
+  flex-direction: row;
+  position:relative;
+  left:500px;
+}
+
+.Main-button-content{
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.body-text{
+  display:flex;
+  flex-direction:row;
+  position: relative;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container{
+  display:flex;
+  flex-direction:row;
 }

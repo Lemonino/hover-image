@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Sidebar = styled.div`{isActive}
     flex-direction: column;
-    position: relative;
+    position: fixed;
     min-height: 100vh;
     width: ${(props) => props.isActive ? '260px' : '0px'};
     visibility: ${(props) => props.isActive ? 'visible' : 'hidden'};
