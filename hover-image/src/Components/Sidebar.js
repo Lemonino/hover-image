@@ -3,7 +3,6 @@ import { SideBarContext } from '../SideBarContext';
 import '../App.css';
 import Hamburger from 'hamburger-react'
 import { Sidebar, SideBarContainer, IconContainer, SideBarContent } from './Sidebar.style';
-import Modalz from './Modalz';
 
 
 function Sidebarz({showModal}) {
@@ -43,17 +42,16 @@ function Sidebarz({showModal}) {
             <Sidebar isActive={isActive} >
                 <SideBarContent isActive={isActive}>
                     <ul onClick={handleHomeClick} className="list-item">
-                        Home
+                        About me
                     </ul>
 
                     <ul className="list-item">
-                        About
+                        Experience
                     </ul>
 
                     <ul className="list-item" onClick={handleContactClick}>
-                        Contact Me
+                        Contacts
                     </ul>
-                    <Modalz/>
                 </SideBarContent>
             </Sidebar>
         </SideBarContainer>

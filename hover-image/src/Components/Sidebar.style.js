@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Sidebar = styled.div`{isActive}
     flex-direction: column;
     position: fixed;
+    align-self: flex-start;
     min-height: 100vh;
     width: ${(props) => props.isActive ? '260px' : '0px'};
     visibility: ${(props) => props.isActive ? 'visible' : 'hidden'};
@@ -17,7 +18,8 @@ export const Sidebar = styled.div`{isActive}
 
 export const SideBarContainer = styled.div`
     flex-direction:column;
-    position:relative;
+    position:fixed;
+    align-self: flex-start;
 `
 
 export const IconContainer = styled.div`

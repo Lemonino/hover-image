@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-brands-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.1.19",
     "@mantine/core": "^4.2.12",
     "@mantine/hooks": "^4.2.12",
     "@mantine/modals": "^4.2.12",
