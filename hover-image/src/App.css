@@ -1,12 +1,12 @@
 .App {
   display: flex;
   flex-direction: column;
-  flex-wrap:wrap;
-  height:3000px;
+  flex-wrap: wrap;
+  height: 3000px;
 }
 
 .show-modal-button {
-  margin:30px;
+  margin: 30px;
   height: 200px;
   width: 200px;
 }
@@ -45,125 +45,149 @@
 }
 
 .hamburger {
-  color:black;
+  color: black;
   cursor: pointer;
   margin: 30px;
   size: 32pt;
-  width:max-content;
+  width: max-content;
 }
 
 .icon {
-  margin-top:100px;
-  size:32pt;
+  margin-top: 100px;
+  size: 32pt;
   cursor: pointer;
-  width:max-content;
+  width: max-content;
 }
 
 .list-item {
-  margin:30px;
+  margin: 30px;
 }
 
-.Title{
-  position:fixed;
-  left:200px;
+.Title {
+  position: fixed;
+  left: 200px;
 }
 
-.Main-button-container{
-  display:flex;
+.Main-button-container {
+  display: flex;
   flex-direction: row;
-  position:relative;
-  left:500px;
+  position: relative;
+  left: 500px;
 }
 
-.Main-button-content{
-  margin-left:20px;
-  margin-right:20px;
+.Main-button-content {
+  margin-left: 20px;
+  margin-right: 20px;
   cursor: pointer;
 }
 
-.Main-button-content:hover{
+.Main-button-content:hover {
   text-decoration: underline;
 }
 
-.body-text{
-  display:flex;
-  flex-direction:row;
-  margin:50px;
+.body-text {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
   position: relative;
-  width:100%;
+  width: 100%;
   align-items: center;
   justify-content: center;
 }
 
-.app-container{
-  display:flex;
-  flex-direction:row;
+.app-container {
+  display: flex;
+  flex-direction: row;
+  background: rgb(8, 8, 17);
+  background: linear-gradient(90deg, rgba(8, 8, 17, 0) 0%, rgba(26, 27, 27, 1) 0%, rgba(125, 159, 166, 1) 0%);
 }
 
-.intro-text{
-  margin:20px;
+.intro-text {
+  margin: 20px;
 }
 
-.linkedin-link{
-  margin-left:3px;
+.linkedin-link {
+  margin-left: 3px;
 }
 
-.intro-container{
-  display:flex;
-  flex-direction:column;
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  background: rgb(8, 8, 17);
+  background: linear-gradient(90deg, rgba(8, 8, 17, 0) 0%, rgba(26, 27, 27, 1) 0%, rgba(217, 229, 232, 1) 0%);
 }
 
-.modal-button{
-  position:relative;
-  bottom:50px;
-  left:100px;
+.modal-button {
+  position: relative;
+  bottom: 50px;
+  left: 100px;
 }
 
-.intro-text-container{
-  display:flex;
-  flex-direction:column;
+.intro-text-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.linkedin-container{
-  display:flex;
-  flex-direction:row;
+.linkedin-container {
+  display: flex;
+  flex-direction: row;
   position: relative;
 }
 
-.middle-page-container{
-  display:flex;
-  flex-direction:row;
-  justify-content: center;
-  position:relative;
+.about-me-section {
+  position: static;
+  background: rgb(8, 8, 17);
+  background: linear-gradient(90deg, rgba(8, 8, 17, 0) 0%, rgba(26, 27, 27, 1) 0%, rgba(118, 205, 223, 1) 0%);
+  padding: 15px;
   top: 500px;
 }
 
-.middle-page-first-column{
-  display:flex;
+.middle-page-first-column {
+  display: flex;
   flex-direction: column;
-  margin:20px;
+  margin: 20px;
 }
 
-.middle-page-second-column{
-}
+.middle-page-second-column {}
 
-.middle-page-first-column-text{
+.middle-page-first-column-text {
   position: relative;
-  margin-top:20px;
-  right:200px;
+  margin-top: 20px;
+  right: 200px;
 }
 
-.work-experience-section{
-  /* display:flex;
+.work-experience-section {
   position: static;
-  top: 800px;
-  width:100%; */
-  /* left: 550px; */
-  /* font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold; */
+  top: 1000px;
+  padding: 15px;
+  background: rgb(8, 8, 17);
+  background: linear-gradient(90deg, rgba(8, 8, 17, 0) 0%, rgba(26, 27, 27, 1) 0%, rgba(190, 227, 235, 1) 0%);
 }
 
+.image-row {
+  padding: 5px;
+  /* height:100%;
+  width:100%; */
+  /* overfloW:hidden; */
+  background: rgb(8, 8, 17);
+  background: linear-gradient(90deg, rgba(8, 8, 17, 0) 0%, rgba(26, 27, 27, 1) 0%, rgba(190, 227, 235, 1) 0%);
+}
+
+.image-row-iamges {
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+}
+
+.Education-section {
+  padding: 5px;
+  background: rgb(8, 8, 17);
+  background: linear-gradient(90deg, rgba(8, 8, 17, 0) 0%, rgba(26, 27, 27, 1) 0%, rgba(190, 227, 235, 1) 0%);
+}
+
+.inspiration-quote-section {
+  display:flex;
+  justify-content: center;
+  background: rgb(8, 8, 17);
+  background: linear-gradient(90deg, rgba(8, 8, 17, 0) 0%, rgba(26, 27, 27, 1) 0%, rgba(143, 119, 207, 1) 0%);
+}

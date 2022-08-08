@@ -10,6 +10,7 @@ export const Sidebar = styled.div`{isActive}
     flex-shrink: 0;
     background-color:grey;
     color: white;
+    opacity: 1;
     height: 100%;
     overflow: auto;
     transition: all 0.5s;
