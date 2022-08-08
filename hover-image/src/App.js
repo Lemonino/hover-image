@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import './App.css';
-import Sidebarz from './Components/Sidebar';
 import Iroh from "./image/UncleIroh.png";
 import Pepe from "./image/SailorPepe.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -25,8 +24,7 @@ function App() {
         <div className="app-container">
           {/* <Sidebarz /> */}
 
-          {/* <Drawer/> */}
-
+          <Cunt/>
           {/* <div className="firstColumn">
                   <h1 className="title">This is the hover title</h1>
                 <img src={Pepe} className="image" />
@@ -72,7 +70,7 @@ function App() {
         </div>
 
 
-        <div className="about-me-section">
+        <div className="about-me-section" ref={ref}>
           <Grid justify="center">
             <Grid.Col span={4}>
               <h1>Background</h1>
@@ -107,7 +105,7 @@ function App() {
           </Grid>
         </div>
 
-        <div className='work-experience-section' ref={ref}>
+        <div className='work-experience-section'>
           <Grid justify="center">
             <Grid.Col span={4}><h1>Work Experience</h1></Grid.Col>
             <Grid.Col span={4}>
