@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Modalz from "./Components/Modalz";
 import { Center, Grid, Image } from '@mantine/core';
-import Sidebar from "./Components/Drawer"
+import Cunt from "./Components/cunt";
 
 function App() {
 
