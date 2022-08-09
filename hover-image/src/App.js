@@ -5,7 +5,7 @@ import Pepe from "./image/SailorPepe.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Modalz from "./Components/Modalz";
-import { Center, Grid, Image } from '@mantine/core';
+import { Center, Grid, Image, Blockquote, Text, Paper } from '@mantine/core';
 import Cunt from "./Components/cunt";
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         <div className="app-container">
           {/* <Sidebarz /> */}
 
-          <Cunt/>
+          <Cunt />
           {/* <div className="firstColumn">
                   <h1 className="title">This is the hover title</h1>
                 <img src={Pepe} className="image" />
@@ -41,7 +41,7 @@ function App() {
           <div className="Main-button-container">
 
             <h1 className="Main-button-content" onClick={handleClick}>
-             ABOUT ME
+              ABOUT ME
             </h1>
             <h1 className="Main-button-content" onClick={handleClick}>
               EXPERIENCE
@@ -72,27 +72,36 @@ function App() {
 
         <div className="about-me-section" ref={ref}>
           <Grid justify="center">
-            <Grid.Col span={4}>
-              <h1>Background</h1>
-              <p1 className="middle-page-first-column-text">
+            <Grid.Col span={4} className="column">
+              <h1 style={{ textAlign: "center" }}>Background</h1>
+              {/* <p1 className="middle-page-first-column-text">
                 I’ve gone through a number of phases in my career, and each of them has informed my current work ethos and philosophy. I have excelled in a number of project management roles in diverse industries,
                 and believe that my number one asset is my ability to adapt to any challenge that is
                 thrown my way.
-              </p1>
+              </p1> */}
+              <Paper shadow="xl" radius="xl" p="xl">
+                <Text>
+                  I’ve gone through a number of phases in my career, and each of them has informed my current work ethos and philosophy. I have excelled in a number of project management roles in diverse industries,
+                  and believe that my number one asset is my ability to adapt to any challenge that is
+                  thrown my way.
+                </Text>
+              </Paper>
             </Grid.Col>
             <Grid.Col span={4}>
-              <h1>My Skills</h1>
-              <ul>
-                <li>
-                  ReactJS
-                </li>
-                <li>
-                  CSS
-                </li>
-                <li>
-                  Javascript
-                </li>
-              </ul>
+              <h1 style={{ textAlign: "center" }}>My Skills</h1>
+              <Paper shadow="xl" radius="xl" p="xl">
+                <ul>
+                  <li>
+                    ReactJS
+                  </li>
+                  <li>
+                    CSS
+                  </li>
+                  <li>
+                    Javascript
+                  </li>
+                </ul>
+              </Paper>
             </Grid.Col>
           </Grid>
         </div>
@@ -173,10 +182,9 @@ function App() {
         </div>
 
         <div className="inspiration-quote-section">
-          <h1>
-            your mother - some dude
-
-          </h1>
+          <Blockquote color="yellow" cite="– Forrest Gump">
+            Life is like an npm install – you never know what you are going to get.
+          </Blockquote>
         </div>
       </div>
     </>
