@@ -5,17 +5,26 @@ import Pepe from "./image/SailorPepe.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Modalz from "./Components/Modalz";
-import { Center, Grid, Image, Blockquote, Text, Paper } from '@mantine/core';
+import { Center, Grid, Image, Blockquote, Text, Paper, Button } from '@mantine/core';
 import Cunt from "./Components/cunt";
 
 function App() {
 
-  const ref = useRef(null);
+  const aboutMe = useRef(null);
+  const experience = useRef(null);
+  const socials = useRef(null);
 
-
-  const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  const handleAboutMeClick = () => {
+    aboutMe.current?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const handlExperienceClick = () => {
+    experience.current?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  const handleSocialsClick = () => {
+    socials.current?.scrollIntoView({ behavior: 'smooth' });
+  }
 
   return (
     <>
@@ -24,7 +33,7 @@ function App() {
         <div className="app-container">
           {/* <Sidebarz /> */}
 
-          <Cunt/>
+          <Cunt />
           {/* <div className="firstColumn">
                   <h1 className="title">This is the hover title</h1>
                 <img src={Pepe} className="image" />
@@ -40,15 +49,15 @@ function App() {
 
           <div className="Main-button-container">
 
-            <h1 className="Main-button-content" onClick={handleClick}>
+            <h1 className="Main-button-content" onClick={handleAboutMeClick}>
               ABOUT ME
             </h1>
-            <h1 className="Main-button-content" onClick={handleClick}>
+            <h1 className="Main-button-content" onClick={handlExperienceClick}>
               EXPERIENCE
             </h1>
 
-            <h1 className="Main-button-content">
-              CONTACTS
+            <h1 className="Main-button-content" onClick={handleSocialsClick}>
+              SOCIALS
             </h1>
 
           </div>
@@ -70,7 +79,7 @@ function App() {
         </div>
 
 
-        <div className="about-me-section" ref={ref}>
+        <div className="about-me-section" ref={aboutMe}>
           <Grid justify="center">
             <Grid.Col span={4} className="column">
               <h1 style={{ textAlign: "center" }}>Background</h1>
@@ -115,7 +124,7 @@ function App() {
           </Grid>
         </div>
 
-        <div className='work-experience-section'>
+        <div className='work-experience-section' ref={experience}>
           <Grid justify="center">
             <Grid.Col span={4}><h1>Work Experience</h1></Grid.Col>
             <Grid.Col span={4}>
@@ -190,9 +199,30 @@ function App() {
         </div>
 
         <div className="inspiration-quote-section">
-          <Blockquote color="yellow" cite="– Forrest Gump">
-            Life is like an npm install – you never know what you are going to get.
+          <Blockquote color="yellow" cite="–Idowu Koyenikan">
+            Whenever I am in a difficult situation where there seems to be no way out,
+            I think about all the times I have been in such situations and say to myself:
+            I did it before, so I can do it again.
           </Blockquote>
+        </div>
+
+        <div className='social-media-section'>
+          <Grid gutter="xs" justify="center">
+            <Grid.Col span={4} style={{ textAlign: "center" }}><h2>Bryann Poon</h2></Grid.Col>
+            <Grid.Col span={4} style={{ textAlign: "center" }}>
+              <h2>Socials</h2>
+              <FontAwesomeIcon icon={faLinkedin} />
+              <a target="_blank" href="https://www.linkedin.com/in/bryann-poon-11970115b/" className="linkedin-link">Linkedin</a>
+            </Grid.Col>
+            <Grid.Col span={4} style={{ textAlign: "center" }}>
+              <h2>Contacts</h2>
+              {/* <button onClick={() => window.location = 'mailto:yourmail@domain.com'}>Contact Me</button> */}
+              <Button color="gray" radius="xl" onClick={() => window.location = 'mailto:yourmail@domain.com'}>
+                Contact Me
+              </Button>
+            </Grid.Col>
+
+          </Grid>
         </div>
       </div>
     </>
