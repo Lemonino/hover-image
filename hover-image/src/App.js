@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Modalz from "./Components/Modalz";
 import { Center, Grid, Image, Blockquote, Text, Paper, Button } from '@mantine/core';
-import Cunt from "./Components/cunt";
+import SideNav from "./Components/SideNav";
 
 function App() {
 
@@ -33,7 +33,7 @@ function App() {
         <div className="app-container">
           {/* <Sidebarz /> */}
 
-          <Cunt />
+          <SideNav />
           {/* <div className="firstColumn">
                   <h1 className="title">This is the hover title</h1>
                 <img src={Pepe} className="image" />
@@ -193,6 +193,16 @@ function App() {
                     Bsc Computing and Information Systems
                   </li>
                 </ul>
+               
+              </Paper>
+              <h1>Jurong Junior College</h1>
+              <Paper shadow="xl" radius="xl" p="xl">
+                <p1>January 2014  - December 2015</p1>
+                <ul>
+                  <li>
+                    GCE A-Level
+                  </li>
+                </ul>
               </Paper>
             </Grid.Col>
           </Grid>
@@ -206,7 +216,7 @@ function App() {
           </Blockquote>
         </div>
 
-        <div className='social-media-section'>
+        <div className='social-media-section' ref={socials}>
           <Grid gutter="xs" justify="center">
             <Grid.Col span={4} style={{ textAlign: "center" }}><h2>Bryann Poon</h2></Grid.Col>
             <Grid.Col span={4} style={{ textAlign: "center" }}>
