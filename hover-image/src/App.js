@@ -74,11 +74,6 @@ function App() {
           <Grid justify="center">
             <Grid.Col span={4} className="column">
               <h1 style={{ textAlign: "center" }}>Background</h1>
-              {/* <p1 className="middle-page-first-column-text">
-                I’ve gone through a number of phases in my career, and each of them has informed my current work ethos and philosophy. I have excelled in a number of project management roles in diverse industries,
-                and believe that my number one asset is my ability to adapt to any challenge that is
-                thrown my way.
-              </p1> */}
               <Paper shadow="xl" radius="xl" p="xl">
                 <Text>
                   I’ve gone through a number of phases in my career, and each of them has informed my current work ethos and philosophy. I have excelled in a number of project management roles in diverse industries,
@@ -118,50 +113,55 @@ function App() {
           <Grid justify="center">
             <Grid.Col span={4}><h1>Work Experience</h1></Grid.Col>
             <Grid.Col span={4}>
-              <h1>
+              <h1 style={{ textAlign: "center" }}>
                 Data Engineer
               </h1>
-              <p1>May 2022 - Present</p1>
-              <ul>
-                <li>
-                  Maintaining and monitoring data ingestion DAGs
-                </li>
-                <li>
-                  Developing new datapipelines
-                </li>
-                <li>
-                  Working with developers to diagnose issues
-                </li>
-              </ul>
+              <Paper shadow="xl" radius="xl" p="xl">
+                <p1>May 2022 - Present</p1>
+                <ul>
+                  <li>
+                    Maintaining and monitoring data ingestion DAGs
+                  </li>
+                  <li>
+                    Developing new datapipelines
+                  </li>
+                  <li>
+                    Working with developers to diagnose issues
+                  </li>
+                </ul>
+              </Paper>
 
-              <h1>Frontend Developer </h1>
-              <p1>August 2021 - May 2022</p1>
-              <ul>
-                <li>
-                  Developing UI components for Temasek web applications
-                </li>
-                <li>
-                  Testing components with Jest and Enzyme
-                </li>
-                <li>
-                  Working with business users to understand user requirements
-                </li>
-              </ul>
+              <h1 style={{ textAlign: "center" }}>Frontend Developer </h1>
+              <Paper shadow="xl" radius="xl" p="xl">
+                <p1>August 2021 - May 2022</p1>
+                <ul>
+                  <li>
+                    Developing UI components for Temasek web applications
+                  </li>
+                  <li>
+                    Testing components with Jest and Enzyme
+                  </li>
+                  <li>
+                    Working with business users to understand user requirements
+                  </li>
+                </ul>
+              </Paper>
 
-              <h1>IT Support Engineer</h1>
-              <p1>January 2018 - June 2018</p1>
-              <ul>
-                <li>
-                  Installing and configuring computer hardware, software, systems, networks, printers and scanners
-                </li>
-                <li>
-                  Monitoring and maintaining computer systems and networks
-                </li>
-                <li>
-                  Responding in a timely manner to service issues and requests
-                </li>
-              </ul>
-
+              <h1 style={{ textAlign: "center" }}>IT Support Engineer</h1>
+              <Paper shadow="xl" radius="xl" p="xl">
+                <p1>January 2018 - June 2018</p1>
+                <ul>
+                  <li>
+                    Installing and configuring computer hardware, software, systems, networks, printers and scanners
+                  </li>
+                  <li>
+                    Monitoring and maintaining computer systems and networks
+                  </li>
+                  <li>
+                    Responding in a timely manner to service issues and requests
+                  </li>
+                </ul>
+              </Paper>
             </Grid.Col>
           </Grid>
         </div>
@@ -171,12 +171,14 @@ function App() {
             <Grid.Col span={4}><h1>Education</h1></Grid.Col>
             <Grid.Col span={4}>
               <h1>University of London</h1>
-              <p1>September 2018 - September 2021</p1>
-              <ul>
-                <li>
-                  Bsc Computing and Information Systems
-                </li>
-              </ul>
+              <Paper shadow="xl" radius="xl" p="xl">
+                <p1>September 2018 - September 2021</p1>
+                <ul>
+                  <li>
+                    Bsc Computing and Information Systems
+                  </li>
+                </ul>
+              </Paper>
             </Grid.Col>
           </Grid>
         </div>
