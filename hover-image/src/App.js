@@ -24,7 +24,7 @@ function App() {
         <div className="app-container">
           {/* <Sidebarz /> */}
 
-          <Cunt />
+          <Cunt/>
           {/* <div className="firstColumn">
                   <h1 className="title">This is the hover title</h1>
                 <img src={Pepe} className="image" />
@@ -94,6 +94,12 @@ function App() {
                   </li>
                   <li>
                     Javascript
+                  </li>
+                  <li>
+                    Jest and Enzyme
+                  </li>
+                  <li>
+                    Html
                   </li>
                 </ul>
               </Paper>

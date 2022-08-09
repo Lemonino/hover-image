@@ -1,25 +1,26 @@
 import React, { useState, useContext } from 'react';
-import { Drawer, Button, Group } from '@mantine/core';
-
+import { Drawer, Button, Group, Burger } from '@mantine/core';
+import './Components.css'
 
 export default function Cunt() {
 
     const [opened, setOpened] = useState(false);
+    const title = opened ? 'Close navigation' : 'Open navigation';
 
     return (
         <>
             <Drawer
                 opened={opened}
                 onClose={() => setOpened(false)}
-                title="Register"
+                title="Navigation"
                 padding="xl"
-                size="xl"
+                size="sm"
             >
                 {/* Drawer content */}
             </Drawer>
 
             <Group position="center">
-                <Button onClick={() => setOpened(true)}>Open Drawer</Button>
+                <Button className="burger-button"  color="violet" onClick={() => setOpened(true)}>Open Drawer</Button>
             </Group>
         </>
     );
