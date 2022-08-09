@@ -72,6 +72,9 @@
   display: flex;
   flex-direction: row;
   position: relative;
+  color: rgb(104, 104, 170);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
   left: 500px;
 }
 
@@ -88,7 +91,7 @@
 .body-text {
   display: flex;
   flex-direction: row;
-  margin: 50px;
+  margin: 25px;
   position: relative;
   width: 100%;
   align-items: center;
@@ -98,12 +101,13 @@
 .app-container {
   display: flex;
   flex-direction: row;
-  background: rgb(8, 8, 17);
-  background: linear-gradient(90deg, rgba(8, 8, 17, 0) 0%, rgba(26, 27, 27, 1) 0%, rgba(125, 159, 166, 1) 0%);
+  --contrastBackgroundColor: #dcdcdc;
+  --background-color: var(--colors-light);
 }
 
 .intro-text {
   margin: 20px;
+  font-family: Helvetica;
 }
 
 .linkedin-link {
@@ -113,8 +117,9 @@
 .intro-container {
   display: flex;
   flex-direction: column;
-  background: rgb(8, 8, 17);
-  background: linear-gradient(90deg, rgba(8, 8, 17, 0) 0%, rgba(26, 27, 27, 1) 0%, rgba(217, 229, 232, 1) 0%);
+  color: black;
+  background: rgb(128, 180, 181);
+  background: linear-gradient(90deg, rgba(128, 180, 181, 1) 0%, rgba(146, 172, 208, 1) 0%, rgba(8, 8, 17, 0) 0%, rgba(207, 173, 232, 1) 0%, rgba(148, 208, 208, 1) 0%, rgba(246, 243, 235, 1) 0%);
 }
 
 .modal-button {
@@ -136,10 +141,10 @@
 
 .about-me-section {
   position: static;
-  background: rgb(8, 8, 17);
-  background: linear-gradient(90deg, rgba(8, 8, 17, 0) 0%, rgba(26, 27, 27, 1) 0%, rgba(118, 205, 223, 1) 0%);
   padding: 15px;
   top: 500px;
+  background: rgb(128, 180, 181);
+  background: linear-gradient(90deg, rgba(128, 180, 181, 1) 0%, rgba(146, 172, 208, 1) 0%, rgba(8, 8, 17, 0) 0%, rgba(207, 173, 232, 1) 0%, rgba(148, 208, 208, 1) 0%, rgba(235, 245, 246, 1) 0%);
 }
 
 .middle-page-first-column {
@@ -147,8 +152,6 @@
   flex-direction: column;
   margin: 20px;
 }
-
-.middle-page-second-column {}
 
 .middle-page-first-column-text {
   position: relative;
@@ -160,8 +163,8 @@
   position: static;
   top: 1000px;
   padding: 15px;
-  background: rgb(8, 8, 17);
-  background: linear-gradient(90deg, rgba(8, 8, 17, 0) 0%, rgba(26, 27, 27, 1) 0%, rgba(190, 227, 235, 1) 0%);
+  background: rgb(128, 180, 181);
+  background: linear-gradient(90deg, rgba(128, 180, 181, 1) 0%, rgba(146, 172, 208, 1) 0%, rgba(8, 8, 17, 0) 0%, rgba(207, 173, 232, 1) 0%, rgba(148, 208, 208, 1) 0%, rgba(246, 243, 235, 1) 0%);
 }
 
 .image-row {
@@ -181,12 +184,12 @@
 
 .Education-section {
   padding: 5px;
-  background: rgb(8, 8, 17);
-  background: linear-gradient(90deg, rgba(8, 8, 17, 0) 0%, rgba(26, 27, 27, 1) 0%, rgba(190, 227, 235, 1) 0%);
+  background: rgb(128, 180, 181);
+  background: linear-gradient(90deg, rgba(128, 180, 181, 1) 0%, rgba(146, 172, 208, 1) 0%, rgba(8, 8, 17, 0) 0%, rgba(207, 173, 232, 1) 0%, rgba(148, 208, 208, 1) 0%, rgba(235, 245, 246, 1) 0%);
 }
 
 .inspiration-quote-section {
-  display:flex;
+  display: flex;
   justify-content: center;
   background: rgb(8, 8, 17);
   background: linear-gradient(90deg, rgba(8, 8, 17, 0) 0%, rgba(26, 27, 27, 1) 0%, rgba(143, 119, 207, 1) 0%);

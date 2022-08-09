@@ -41,14 +41,14 @@ function App() {
           <div className="Main-button-container">
 
             <h1 className="Main-button-content" onClick={handleClick}>
-              About me
+             ABOUT ME
             </h1>
             <h1 className="Main-button-content" onClick={handleClick}>
-              Experience
+              EXPERIENCE
             </h1>
 
             <h1 className="Main-button-content">
-              Contacts
+              CONTACTS
             </h1>
 
           </div>
@@ -63,7 +63,7 @@ function App() {
                 <FontAwesomeIcon icon={faLinkedin} />
                 <a target="_blank" href="https://www.linkedin.com/in/bryann-poon-11970115b/" className="linkedin-link">Linkedin</a>
               </div>
-              <Modalz className="Modal-button" />
+              {/* <Modalz className="Modal-button" /> */}
             </div>
             <img src={Iroh} className="image" />
           </div>
