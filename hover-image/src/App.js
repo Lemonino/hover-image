@@ -1,11 +1,14 @@
 import React, { useRef } from 'react';
 import './App.css';
 import Iroh from "./image/UncleIroh.png";
-import Pepe from "./image/SailorPepe.png"
+import Pepe from "./image/SailorPepe.png";
+import AsianMan1 from "./image/pexels-andrea-piacquadio-3760790.jpg";
+import AsianMan2 from "./image/pexels-andrea-piacquadio-3760809.jpg";
+import AsianMan3 from "./image/pexels-andrea-piacquadio-3760811.jpg";
+import AsianMan4 from "./image/pexels-mentatdgt-937481.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import Modalz from "./Components/Modalz";
-import { Center, Grid, Image, Blockquote, Text, Paper, Button } from '@mantine/core';
+import { Grid, Image, Blockquote, Text, Paper, Button } from '@mantine/core';
 import SideNav from "./Components/SideNav";
 
 function App() {
@@ -67,13 +70,13 @@ function App() {
         <div className="intro-container">
           <div className="body-text">
             <div className="intro-text-container">
-              <h1 className="intro-text"> Hi, I am a software developer</h1>
-              <div className="linkedin-container">
-                <FontAwesomeIcon icon={faLinkedin} />
+              <h1 className="intro-text"> Hi, I am a software developer<br/> specialising in UI components</h1>
+              <div className="">
+                <FontAwesomeIcon icon={faLinkedin} className='Linkedin-icon'/>
                 <a target="_blank" href="https://www.linkedin.com/in/bryann-poon-11970115b/" className="linkedin-link">Linkedin</a>
               </div>
             </div>
-            <img src={Iroh} className="image" />
+            <img src={AsianMan1} className="image" />
           </div>
         </div>
 
@@ -117,9 +120,9 @@ function App() {
 
         <div className='image-row'>
           <Grid justify="center">
-            <Grid.Col span={4}><img src={Pepe} alt="profile_picture" className="image-row-iamges" /></Grid.Col>
-            <Grid.Col span={4}><img src={Pepe} alt="profile_picture" className="image-row-iamges" /></Grid.Col>
-            <Grid.Col span={4}><img src={Pepe} alt="profile_picture" className="image-row-iamges" /></Grid.Col>
+            <Grid.Col span={4}><img src={AsianMan2} alt="profile_picture" className="image-row-iamges" /></Grid.Col>
+            <Grid.Col span={4}><img src={AsianMan3} alt="profile_picture" className="image-row-iamges" /></Grid.Col>
+            <Grid.Col span={4}><img src={AsianMan4} alt="profile_picture" className="image-row-iamges" /></Grid.Col>
           </Grid>
         </div>
 
