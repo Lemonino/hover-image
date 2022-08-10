@@ -72,7 +72,6 @@ function App() {
                 <FontAwesomeIcon icon={faLinkedin} />
                 <a target="_blank" href="https://www.linkedin.com/in/bryann-poon-11970115b/" className="linkedin-link">Linkedin</a>
               </div>
-              {/* <Modalz className="Modal-button" /> */}
             </div>
             <img src={Iroh} className="image" />
           </div>

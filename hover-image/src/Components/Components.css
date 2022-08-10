@@ -3,3 +3,16 @@
     position:fixed;
     left: 30px
 }
+
+.about-me-nav{
+    cursor: pointer;
+    margin:100px;
+}
+
+.experience-nav{
+    cursor: pointer;
+}
+
+.contact-me-nav{
+    cursor: pointer;
+}

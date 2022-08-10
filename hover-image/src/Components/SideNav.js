@@ -16,9 +16,7 @@ export default function Cunt() {
                 padding="xl"
                 size="sm"
             >
-                <h4>ABOUT ME</h4>
-                <h4>EXPERIENCE</h4>
-                <h4>CONTACT ME</h4>
+               
             </Drawer>
 
             <Group position="center">

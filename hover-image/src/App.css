@@ -4,8 +4,6 @@
   flex-wrap: wrap;
 }
 
-
-
 .title:hover+.image {
   color: blue;
   visibility: visible;
@@ -65,7 +63,7 @@
 .body-text {
   display: flex;
   flex-direction: row;
-  position: relative;
+  /* position: relative; */
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -81,6 +79,7 @@
 .intro-text {
   margin: 10px;
   font-family: Helvetica;
+  text-shadow: 2px 2px #c0b0ec;
 }
 
 .linkedin-link {
@@ -88,9 +87,8 @@
 }
 
 .intro-container {
-  display: flex;
-  flex-direction: column;
-  color: black;
+  position: static;
+  padding: 10px;
   background: rgb(128, 180, 181);
   background: linear-gradient(90deg, rgba(128, 180, 181, 1) 0%, rgba(146, 172, 208, 1) 0%, rgba(8, 8, 17, 0) 0%, rgba(207, 173, 232, 1) 0%, rgba(148, 208, 208, 1) 0%, rgba(246, 243, 235, 1) 0%);
 }
@@ -109,13 +107,12 @@
 .linkedin-container {
   display: flex;
   flex-direction: row;
-  position: relative;
+  /* position: relative; */
 }
 
 .about-me-section {
   position: static;
   padding: 10px;
-  top: 500px;
   background: rgb(128, 180, 181);
   background: linear-gradient(90deg, rgba(128, 180, 181, 1) 0%, rgba(146, 172, 208, 1) 0%, rgba(8, 8, 17, 0) 0%, rgba(207, 173, 232, 1) 0%, rgba(148, 208, 208, 1) 0%, rgba(235, 245, 246, 1) 0%);
 }
