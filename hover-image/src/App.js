@@ -34,9 +34,13 @@ function App() {
       <div className="App">
 
         <div className="app-container">
-          {/* <Sidebarz /> */}
 
-          <SideNav />
+          <SideNav 
+            aboutMe={aboutMe}
+            experience={experience}
+            socials={socials}
+          />
+          
           {/* <div className="firstColumn">
                   <h1 className="title">This is the hover title</h1>
                 <img src={Pepe} className="image" />
