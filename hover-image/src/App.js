@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import './App.css';
 import Iroh from "./image/UncleIroh.png";
 import Pepe from "./image/SailorPepe.png";
+import OfficeGroup from "./image/pexels-fauxels-3184395.jpg";
 import AsianMan1 from "./image/pexels-andrea-piacquadio-3760790.jpg";
 import AsianMan2 from "./image/pexels-andrea-piacquadio-3760809.jpg";
 import AsianMan3 from "./image/pexels-andrea-piacquadio-3760811.jpg";
@@ -74,13 +75,13 @@ function App() {
         <div className="intro-container">
           <div className="body-text">
             <div className="intro-text-container">
-              <h1 className="intro-text"> Hi, I am a software developer<br/> specialising in UI components</h1>
+              <h1 className="intro-text"> Hi I'm Bryann, a Software Developer</h1>
               <div className="">
                 <FontAwesomeIcon icon={faLinkedin} className='Linkedin-icon'/>
                 <a target="_blank" href="https://www.linkedin.com/in/bryann-poon-11970115b/" className="linkedin-link">Linkedin</a>
               </div>
             </div>
-            <img src={AsianMan1} className="image" />
+            <img src={OfficeGroup} className="image" />
           </div>
         </div>
 
@@ -91,7 +92,7 @@ function App() {
               <h1 style={{ textAlign: "center" }}>Background</h1>
               <Paper shadow="xl" radius="xl" p="xl">
                 <Text>
-                  I’ve gone through a number of phases in my career, and each of them has informed my current work ethos and philosophy. I have excelled in a number of project management roles in diverse industries,
+                  I’ve gone through a number of phases in my career, and each of them has formed my current work ethos and philosophy. I have excelled in a number of roles in the tech industry,
                   and believe that my number one asset is my ability to adapt to any challenge that is
                   thrown my way.
                 </Text>
@@ -228,7 +229,7 @@ function App() {
             <Grid.Col span={4} style={{ textAlign: "center" }}>
               <h2>Socials</h2>
               <FontAwesomeIcon icon={faLinkedin} />
-              <a target="_blank" href="https://www.linkedin.com/in/bryann-poon-11970115b/" className="linkedin-link">Linkedin</a>
+              <a target="_blank" href="https://www.linkedin.com/in/bryann-poon-11970115b/" className="linkedin-link2">Linkedin</a>
             </Grid.Col>
             <Grid.Col span={4} style={{ textAlign: "center" }}>
               <h2>Contacts</h2>

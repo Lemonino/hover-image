@@ -168,6 +168,9 @@
 
 .social-media-section {
   color:white;
-  background: rgb(128,180,181);
-  background: linear-gradient(90deg, rgba(128,180,181,1) 0%, rgba(8,8,17,0) 0%, rgba(207,173,232,1) 0%, rgba(148,208,208,1) 0%, rgba(235,245,246,1) 0%, rgba(164,110,231,1) 0%);
+  background-color: rgb(86, 38, 148);
+}
+
+.linkedin-link2{
+  color:white;
 }
